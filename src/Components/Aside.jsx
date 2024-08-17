@@ -1,9 +1,9 @@
 import { useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../Providers/AuthProviders";
 import { CiMenuBurger } from "react-icons/ci";
-
+ 
 const Aside = () => {
   const {
     minValue,
@@ -27,7 +27,7 @@ const Aside = () => {
       .then((response) => [
         queryClient.setQueryData(["products"], response.data),
       ]);
-  }, [checkedBrand, checkedCategory, minValue, maxValue, currentPage]);
+  }, [checkedBrand, checkedCategory, minValue, maxValue, currentPage, queryClient]);
 
   const handleBrandCheckboxChange = async (event) => {
     const { checked, value } = event.target;
