@@ -9,7 +9,7 @@ const Product = ({ product }) => {
           <div className="overflow-hidden">
             <div className="mt-5">
               <p className="text-xs text-end">Date: {product.date}</p>
-            </div>
+            </div> 
             <div className="flex justify-between mt-1">
               <h1 className="text-xs text-end my-1">Brand: {product.brand}</h1>
               <h1 className="text-xs text-end my-1">

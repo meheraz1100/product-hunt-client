@@ -8,7 +8,7 @@ const SearchBar = () => {
     event.preventDefault();
     const searchtText = event.target.search.value;
     console.log(searchtText);
-    const response = await axios.get(
+    const response = await axios.get( 
       `https://server-side-seven-xi.vercel.app/products?name=${searchtText}`
     );
     queryClient.setQueryData(["products"], response.data);

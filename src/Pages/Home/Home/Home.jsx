@@ -18,7 +18,7 @@ const Home = () => {
             <div className="flex-1">
               <div className="">
                 <SearchBar />
-              </div>
+              </div> 
               <div>
                 <Products />
               </div>
