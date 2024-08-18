@@ -1,4 +1,4 @@
-Live Link: [productFinder](https://productfinders.netlify.app)
+Live Link: [productHunt]()
 
 1. Clone the repository:
    ```bash
