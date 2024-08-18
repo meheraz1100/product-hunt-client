@@ -12,7 +12,7 @@ const Login = () => {
     setTimeout(() => {
       navigate(location?.state ? location.state : "/");
     },1000);
-  };
+  }; 
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
