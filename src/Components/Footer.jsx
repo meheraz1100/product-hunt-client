@@ -4,7 +4,7 @@ const Footer = () => {
       <footer className="footer bg-white mt-20 text-base-content p-10">
         <aside>
           <p>
-            productFinder
+            productHunt
             <br />
             Providing reliable products since 2002
           </p>

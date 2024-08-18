@@ -17,7 +17,7 @@ const Products = () => {
   const { data: products = [] } = useQuery({
     queryKey: ["products"],
     queryFn: async () => {
-      const response = await axios.get("http://localhost:5000/products");
+      const response = await axios.get("https://server-side-seven-xi.vercel.app/products");
       return response.data;
     },
   });
@@ -25,7 +25,7 @@ const Products = () => {
   const { data: productLength = [] } = useQuery({
     queryKey: ["productLength"],
     queryFn: async () => {
-      const response = await axios.get("http://localhost:5000/products-length");
+      const response = await axios.get("https://server-side-seven-xi.vercel.app/product-length");
       return response.data;
     },
   });

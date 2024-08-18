@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="navbar max-w-7xl mx-auto mb-5">
             <div className="navbar-start">
               <p className="text-xl font-semibold">
-                product<span className="text-primary">Finder</span>
+                product<span className="text-primary">Hunt</span>
               </p>
             </div>
             <div className="navbar-end">

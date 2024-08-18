@@ -9,7 +9,7 @@ const SearchBar = () => {
     const searchtText = event.target.search.value;
     console.log(searchtText);
     const response = await axios.get(
-      `http://localhost:5000/products?name=${searchtText}`
+      `https://server-side-seven-xi.vercel.app/products?name=${searchtText}`
     );
     queryClient.setQueryData(["products"], response.data);
   };
@@ -17,7 +17,7 @@ const SearchBar = () => {
   const handleSelectFilter = async (event) => {
     console.log(event.target.value);
     const response = await axios.get(
-      `http://localhost:5000/products?filters=${event.target.value}`
+      `https://server-side-seven-xi.vercel.app/products?filters=${event.target.value}`
     );
     queryClient.setQueryData(["products"], response.data);
   };

@@ -22,7 +22,7 @@ const Aside = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:5000/products?brandChecked=${checkedBrand}&categoryChecked=${checkedCategory}&minPrice=${minValue}&maxPrice=${maxValue}&page=${currentPage}`
+        `https://server-side-seven-xi.vercel.app/products?brandChecked=${checkedBrand}&categoryChecked=${checkedCategory}&minPrice=${minValue}&maxPrice=${maxValue}&page=${currentPage}`
       )
       .then((response) => [
         queryClient.setQueryData(["products"], response.data),
