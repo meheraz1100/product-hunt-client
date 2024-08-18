@@ -6,7 +6,7 @@ const Pagination = ({
   handlePrevPage,
   handleNextPage,
   pages,
-}) => {
+}) => { 
   const { currentPage } = useContext(AuthContext);
 
   return (
