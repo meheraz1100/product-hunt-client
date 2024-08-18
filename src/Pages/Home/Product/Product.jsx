@@ -14,7 +14,7 @@ const Product = ({ product }) => {
               <h1 className="text-xs text-end my-1">Brand: {product.brand}</h1>
               <h1 className="text-xs text-end my-1">
                 Category: {product.category}
-              </h1>
+              </h1> 
             </div>
             <h2 className="card-title capitalize line-clamp-1">
               {product.name}

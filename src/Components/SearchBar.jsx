@@ -7,7 +7,7 @@ const SearchBar = () => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     const searchtText = event.target.search.value;
-    console.log(searchtText);
+    console.log(searchtText); 
     const response = await axios.get( 
       `https://server-side-seven-xi.vercel.app/products?name=${searchtText}`
     );

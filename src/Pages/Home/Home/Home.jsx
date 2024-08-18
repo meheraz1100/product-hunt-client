@@ -16,7 +16,7 @@ const Home = () => {
               <Aside />
             </div>
             <div className="flex-1">
-              <div className="">
+              <div className=""> 
                 <SearchBar />
               </div> 
               <div>
