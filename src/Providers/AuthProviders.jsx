@@ -12,11 +12,10 @@ import {
 
 import auth from "../Firebase/firebase.config";
 import { toast } from "react-toastify";
-import axios from "axios"; 
-import { useQueryClient } from "@tanstack/react-query";
 
 export const AuthContext = createContext(null);
 
+// eslint-disable-next-line
 const AuthProviders = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);

@@ -1,11 +1,8 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProviders";
 
-const Pagination = ({
-  handlePageClick,
-  handlePrevPage,
-  handleNextPage,
-  pages,
+// eslint-disable-next-line
+const Pagination = ({ handlePageClick, handlePrevPage,handleNextPage,pages,
 }) => { 
   const { currentPage } = useContext(AuthContext);
 
@@ -30,6 +27,7 @@ const Pagination = ({
               <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
           </button>
+          {/* eslint-disable-next-line */}
           {pages.map((page) => (
             <input
               key={page}

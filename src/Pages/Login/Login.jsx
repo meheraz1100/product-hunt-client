@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
-import { ToastContainer } from "react-toastify";
+
 
 const Login = () => {
   const { googleSignIn, login, successToast, errorToast } =
@@ -22,10 +22,12 @@ const Login = () => {
     console.log(email, password);
 
     login(email, password)
+    // eslint-disable-next-line
       .then((userCredential) => {
         successToast("Login Successfull");
         navigateToHomePage();
       })
+      // eslint-disable-next-line
       .catch((error) => {
         errorToast("You have entered an invalid Email Or Password");
       });
@@ -94,7 +96,8 @@ const Login = () => {
               </button>
             </div>
             <p className="text-xs text-center sm:px-6 text-gray-600">
-              Don't have an account?
+            {/* // eslint-disable-next-line */}
+              Dont have an account?
               <span className="text-blue-700">
                 <Link to="/register"> Sign up</Link>
               </span>

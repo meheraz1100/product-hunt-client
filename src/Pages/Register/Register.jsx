@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
-import { ToastContainer } from "react-toastify";
 
 const Register = () => {
   const { register, updateUser, successToast, errorToast } =
@@ -23,6 +22,7 @@ const Register = () => {
     const email = event.target.email.value;
     const password = event.target.password.value;
 
+    // eslint-disable-next-line
     register(email, password).then((userCredential) => {
       updateUser(name)
         .then(() => {
